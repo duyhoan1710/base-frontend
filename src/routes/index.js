@@ -1,5 +1,5 @@
-import RegisterComponent from "../containers/Register";
-import LoginComponent from "../containers/Login";
+import RegisterComponent from "../pages/Register";
+import LoginComponent from "../pages/Login";
 
 const routes = [
   {

@@ -7,8 +7,9 @@ import {
   Segment,
   Message,
 } from "semantic-ui-react";
-import Header from "../../components/Header";
 import { Link } from "react-router-dom";
+
+import Header from "components/Header";
 
 const LoginUI = ({
   form: { onChange, form, loginFormValid, error, onSubmit, loading },

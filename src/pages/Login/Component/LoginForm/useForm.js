@@ -1,7 +1,8 @@
 import { useState, useContext, useEffect } from "react";
-import { GlobalContext } from "../../context/Provider";
 import { useHistory } from "react-router-dom";
-import { login } from "../../context/actions/auth/login";
+
+import { GlobalContext } from "context/Provider";
+import { login } from "context/actions/auth/login";
 
 export default () => {
   const [form, setForm] = useState({});

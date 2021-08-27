@@ -1,5 +1,6 @@
 import React from "react";
 import { Image } from "semantic-ui-react";
+
 import "./style.css";
 
 const ImageThumb = ({ firstName, lastName, src, className, style }) => {

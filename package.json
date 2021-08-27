@@ -1,5 +1,5 @@
 {
-  "name": "truly-contacts-frontend",
+  "name": "base-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "firebase": "^7.16.0",
+    "history": "^5.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
@@ -17,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build  && echo '/* /index.html 200' > ./build/_redirects",
+    "build": "react-scripts build && rimraf dist && rename build dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

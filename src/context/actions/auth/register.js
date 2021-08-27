@@ -1,9 +1,9 @@
-import axiosInstance from "../../../helpers/axiosInstance";
+import axiosInstance from "helpers/axiosInstance";
 import {
   REGISTER_LOADING,
   REGISTER_SUCCESS,
   REGISTER_ERROR,
-} from "../../../constants/actionTypes";
+} from "constants/actionTypes";
 
 export const register = ({
   email,

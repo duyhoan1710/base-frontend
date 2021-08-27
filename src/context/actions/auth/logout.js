@@ -1,4 +1,4 @@
-import { LOGOUT_USER } from "../../../constants/actionTypes";
+import { LOGOUT_USER } from "constants/actionTypes";
 
 export default (history) => (dispatch) => {
   localStorage.removeItem("token");

@@ -6,8 +6,9 @@ import {
   Header as SemanticHeader,
   Segment,
 } from "semantic-ui-react";
-import Header from "../../components/Header";
 import { Link } from "react-router-dom";
+
+import Header from "components/Header";
 
 const RegisterUI = ({
   form: { onChange, form, registerFormValid, onSubmit, loading, fieldErrors },
