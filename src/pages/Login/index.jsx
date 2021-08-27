@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import LoginUI from "./Component/LoginForm";
-import useForm from "./Component/LoginForm/useForm";
+import LoginUI from './Component/LoginForm';
+import useForm from './Component/LoginForm/useForm';
 
 const LoginContainer = () => {
   return <LoginUI form={useForm()} />;

@@ -1,18 +1,18 @@
-import RegisterComponent from "../pages/Register";
-import LoginComponent from "../pages/Login";
+import RegisterComponent from '../pages/Register';
+import LoginComponent from '../pages/Login';
 
 const routes = [
   {
-    path: "/auth/register",
+    path: '/auth/register',
     component: RegisterComponent,
-    title: "Register",
+    title: 'Register',
     needsAuth: false,
   },
 
   {
-    path: "/auth/login",
+    path: '/auth/login',
     component: LoginComponent,
-    title: "Login",
+    title: 'Login',
     needsAuth: false,
   },
 ];

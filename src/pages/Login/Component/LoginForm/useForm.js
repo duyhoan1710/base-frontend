@@ -1,8 +1,8 @@
-import { useState, useContext, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { useState, useContext, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 
-import { GlobalContext } from "context/Provider";
-import { login } from "context/actions/auth/login";
+import { GlobalContext } from 'context/Provider';
+import { login } from 'context/actions/auth/login';
 
 export default () => {
   const [form, setForm] = useState({});
@@ -16,11 +16,9 @@ export default () => {
     },
   } = useContext(GlobalContext);
 
-
   const onChange = (e, { name, value }) => {
     setForm({ ...form, [name]: value });
   };
-
 
   const loginFormValid = !form.username?.length || !form.password?.length;
 
@@ -33,7 +31,7 @@ export default () => {
   useEffect(() => {
     if (data) {
       if (data.user) {
-        history.push("/");
+        history.push('/');
       }
     }
   }, [data]);

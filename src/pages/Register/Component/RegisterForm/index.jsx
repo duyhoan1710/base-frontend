@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 import {
   Form,
   Button,
   Grid,
   Header as SemanticHeader,
   Segment,
-} from "semantic-ui-react";
-import { Link } from "react-router-dom";
+} from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
-import Header from "components/Header";
+import Header from 'components/Header';
 
 const RegisterUI = ({
   form: { onChange, form, registerFormValid, onSubmit, loading, fieldErrors },
@@ -25,7 +25,7 @@ const RegisterUI = ({
             <Form>
               <Form.Field>
                 <Form.Input
-                  value={form.username || ""}
+                  value={form.username || ''}
                   onChange={onChange}
                   name="username"
                   placeholder="Username"
@@ -33,14 +33,14 @@ const RegisterUI = ({
                   error={
                     fieldErrors.username && {
                       content: fieldErrors.username,
-                      pointing: "below",
+                      pointing: 'below',
                     }
                   }
                 />
               </Form.Field>
               <Form.Field>
                 <Form.Input
-                  value={form.firstName || ""}
+                  value={form.firstName || ''}
                   onChange={onChange}
                   name="firstName"
                   placeholder="First Name"
@@ -48,14 +48,14 @@ const RegisterUI = ({
                   error={
                     fieldErrors.first_name && {
                       content: fieldErrors.first_name,
-                      pointing: "below",
+                      pointing: 'below',
                     }
                   }
                 />
               </Form.Field>
               <Form.Field>
                 <Form.Input
-                  value={form.lastName || ""}
+                  value={form.lastName || ''}
                   onChange={onChange}
                   name="lastName"
                   placeholder="Last Name"
@@ -63,14 +63,14 @@ const RegisterUI = ({
                   error={
                     fieldErrors.last_name && {
                       content: fieldErrors.last_name,
-                      pointing: "below",
+                      pointing: 'below',
                     }
                   }
                 />
               </Form.Field>
               <Form.Field>
                 <Form.Input
-                  value={form.email || ""}
+                  value={form.email || ''}
                   onChange={onChange}
                   name="email"
                   type="email"
@@ -79,14 +79,14 @@ const RegisterUI = ({
                   error={
                     fieldErrors.email && {
                       content: fieldErrors.email,
-                      pointing: "below",
+                      pointing: 'below',
                     }
                   }
                 />
               </Form.Field>
               <Form.Field>
                 <Form.Input
-                  value={form.password || ""}
+                  value={form.password || ''}
                   onChange={onChange}
                   type="password"
                   name="password"
@@ -95,7 +95,7 @@ const RegisterUI = ({
                   error={
                     fieldErrors.password && {
                       content: fieldErrors.password,
-                      pointing: "below",
+                      pointing: 'below',
                     }
                   }
                 />

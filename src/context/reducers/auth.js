@@ -5,7 +5,7 @@ import {
   LOGIN_LOADING,
   LOGIN_SUCCESS,
   LOGIN_ERROR,
-} from "constants/actionTypes";
+} from 'constants/actionTypes';
 
 const auth = (state, { payload, type }) => {
   switch (type) {

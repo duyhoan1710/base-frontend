@@ -1,18 +1,18 @@
-import React, { Suspense } from "react";
+import React, { Suspense } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   useHistory,
-} from "react-router-dom";
+} from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
-import "semantic-ui-css/semantic.min.css";
-import "./App.css";
+import 'semantic-ui-css/semantic.min.css';
+import './App.css';
 
-import routes from "routes";
-import { GlobalProvider } from "context/Provider";
-import isAuthenticated from "utils/isAuthenticated";
+import routes from 'routes';
+import { GlobalProvider } from 'context/Provider';
+import isAuthenticated from 'utils/isAuthenticated';
 
 export const history = createBrowserHistory();
 
@@ -20,7 +20,7 @@ const RenderRoute = (route) => {
   const history = useHistory();
 
   if (route.needsAuth && !isAuthenticated()) {
-    history.push("/auth/login");
+    history.push('/auth/login');
   }
   return (
     <Route

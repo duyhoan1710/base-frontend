@@ -8,4 +8,4 @@ export const {
   REACT_APP_FIREBASE_APP_ID,
   REACT_APP_MEASUREMENT_ID,
 } = process.env;
-export const FIREBASE_IMAGE_REF = "contactimages";
+export const FIREBASE_IMAGE_REF = 'contactimages';

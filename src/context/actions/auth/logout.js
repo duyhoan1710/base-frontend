@@ -1,9 +1,9 @@
-import { LOGOUT_USER } from "constants/actionTypes";
+import { LOGOUT_USER } from 'constants/actionTypes';
 
 export default (history) => (dispatch) => {
-  localStorage.removeItem("token");
+  localStorage.removeItem('token');
   dispatch({
     type: LOGOUT_USER,
   });
-  history.push("/auth/login");
+  history.push('/auth/login');
 };

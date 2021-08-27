@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 export default (history = null) => {
   const baseURL = process.env.REACT_APP_BACKEND_URL;
@@ -27,12 +27,12 @@ export default (history = null) => {
       }
 
       if (error.response.status === 403) {
-        localStorage.removeItem("token");
+        localStorage.removeItem('token');
 
         if (history) {
-          history.push("/auth/login");
+          history.push('/auth/login');
         } else {
-          window.location = "/auth/login";
+          window.location = '/auth/login';
         }
       } else {
         return new Promise((resolve, reject) => {

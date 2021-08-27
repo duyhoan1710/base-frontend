@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Form,
   Button,
@@ -6,10 +6,10 @@ import {
   Header as SemanticHeader,
   Segment,
   Message,
-} from "semantic-ui-react";
-import { Link } from "react-router-dom";
+} from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
-import Header from "components/Header";
+import Header from 'components/Header';
 
 const LoginUI = ({
   form: { onChange, form, loginFormValid, error, onSubmit, loading },
@@ -27,7 +27,7 @@ const LoginUI = ({
               {error && <Message content={error?.detail} negative />}
               <Form.Field>
                 <Form.Input
-                  value={form.username || ""}
+                  value={form.username || ''}
                   onChange={onChange}
                   name="username"
                   placeholder="Username"
@@ -37,7 +37,7 @@ const LoginUI = ({
 
               <Form.Field>
                 <Form.Input
-                  value={form.password || ""}
+                  value={form.password || ''}
                   onChange={onChange}
                   type="password"
                   name="password"

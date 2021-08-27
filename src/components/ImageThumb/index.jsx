@@ -1,14 +1,14 @@
-import React from "react";
-import { Image } from "semantic-ui-react";
+import React from 'react';
+import { Image } from 'semantic-ui-react';
 
-import "./style.css";
+import './style.css';
 
 const ImageThumb = ({ firstName, lastName, src, className, style }) => {
   const getInitials = () => {
     if (firstName && lastName) {
       return `${firstName[0]}${lastName[0]}`;
     } else {
-      return "";
+      return '';
     }
   };
   return (

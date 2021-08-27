@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
-import { Menu, Image, Button, Icon } from "semantic-ui-react";
-import { Link, useHistory } from "react-router-dom";
+import React, { useContext } from 'react';
+import { Menu, Image, Button, Icon } from 'semantic-ui-react';
+import { Link, useHistory } from 'react-router-dom';
 
-import logo from "assets/images/logo.svg";
-import logout from "context/actions/auth/logout";
-import { GlobalContext } from "context/Provider";
-import isAuthenticated from "utils/isAuthenticated";
+import logo from 'assets/images/logo.svg';
+import logout from 'context/actions/auth/logout';
+import { GlobalContext } from 'context/Provider';
+import isAuthenticated from 'utils/isAuthenticated';
 
 const Header = () => {
   const history = useHistory();

@@ -1,5 +1,5 @@
-import firebase from "firebase/app";
-import "firebase/storage";
+import firebase from 'firebase/app';
+import 'firebase/storage';
 import {
   REACT_APP_FIREBASE_API_KEY,
   REACT_APP_AUTH_DOMAIN,
@@ -9,7 +9,7 @@ import {
   REACT_APP_FIREBASE_MESSAGING_ID,
   REACT_APP_FIREBASE_APP_ID,
   REACT_APP_MEASUREMENT_ID,
-} from "../constants/firebase";
+} from '../constants/firebase';
 
 const firebaseConfig = {
   apiKey: REACT_APP_FIREBASE_API_KEY,
