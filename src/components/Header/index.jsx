@@ -7,6 +7,8 @@ import logout from 'context/actions/auth/logout';
 import { GlobalContext } from 'context/Provider';
 import isAuthenticated from 'utils/isAuthenticated';
 
+import { Container } from './styles';
+
 const Header = () => {
   const history = useHistory();
 
@@ -17,21 +19,32 @@ const Header = () => {
   };
 
   return (
-    <Menu secondary pointing>
-      <Image src={logo} width={60} />
-      <Menu.Item as={Link} to="/" style={{ fontSize: 24 }}>
-        Base Frontend
-      </Menu.Item>
+    <Container>
+      <Menu secondary pointing className="menu">
+        <Image className="logo-image" src={logo} />
 
-      {isAuthenticated() && (
-        <Menu.Item position="right">
-          <Button onClick={handleUserLogout} color="red" basic icon>
-            <Icon name="log out"></Icon>
-            Logout
-          </Button>
+        <Menu.Item>
+          <Link className="logo-text" to="/">
+            Base Frontend
+          </Link>
         </Menu.Item>
-      )}
-    </Menu>
+
+        {isAuthenticated() && (
+          <Menu.Item position="right">
+            <Button
+              className="btn-logout"
+              onClick={handleUserLogout}
+              color="red"
+              basic
+              icon
+            >
+              <Icon name="log out"></Icon>
+              Logout
+            </Button>
+          </Menu.Item>
+        )}
+      </Menu>
+    </Container>
   );
 };
 
